@@ -3,11 +3,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Projetos - Squad B</title>
+  <title>Habilidades - Squad B</title>
   <link rel="stylesheet" href="styles/habilidades.css">
 </head>
 <body>
-  <!-- Conteúdo da página Projetos do Squad B -->
+  <!-- Navegação principal da página de habilidades. -->
   <header>
     <div class="nav-bar">
       <nav>
@@ -24,96 +24,54 @@
     </div>
   </header>
   
-  <!-- CONTEÚDO PRINCIPAL -->
+  <!-- Conteúdo principal: apresenta as ferramentas dominadas pelo squad. -->
   <main>
     <section class="intro">
       <h2>Nossas Skills</h2>
       <p>Algumas das ferramentas nas quais somos bons</p>
     </section>
 
-    <!-- CONTAINER DE PROJETOS -->
-    <section class="projects-container">
-      
-      <!-- SKILL 1 -->
-      <div class="project-card-container project-card-container--css">
-        <div class="project-card">
-          <img src="svg/css-brands-solid-full.svg" class="skills-logo skill-css" alt="Ícone CSS">
-          <div class="infos">
-            <h3>CSS</h3>
-          </div>
-        </div>
-      </div>
+    <!-- Cada item reúne os dados de uma skill; o CSS decide apenas sua aparência. -->
+    <section class="skills-list" aria-label="Ferramentas conhecidas pelo squad">
+      <article class="skill-card skill-card--css" data-skill="css">
+        <img src="svg/css-brands-solid-full.svg" class="skills-logo" alt="Ícone CSS">
+        <h3>CSS</h3>
+      </article>
 
-      <!-- SKILL 2 -->
-      <div class="project-card-container project-card-container--html">
-        <div class="project-card">
-          <img src="svg/html5-brands-solid-full.svg" class="skills-logo skill-html" alt="Ícone HTML">
-          <div class="infos">
-            <h3>HTML</h3>
-          </div>
-        </div>
-      </div>
+      <article class="skill-card skill-card--html" data-skill="html">
+        <img src="svg/html5-brands-solid-full.svg" class="skills-logo" alt="Ícone HTML">
+        <h3>HTML</h3>
+      </article>
 
-      <!-- SKILL 3 -->
-      <div class="project-card-container project-card-container--javascript">  
-        <div class="project-card">
-          <img src="svg/js-brands-solid-full.svg" class="skills-logo skill-javascript" alt="Ícone JS">
-          <div class="infos">
-            <h3>JavaScript</h3>
-          </div>
-        </div>
-      </div>
+      <article class="skill-card skill-card--javascript" data-skill="javascript">
+        <img src="svg/js-brands-solid-full.svg" class="skills-logo" alt="Ícone JavaScript">
+        <h3>JavaScript</h3>
+      </article>
 
-      <!-- SKILL 4 -->
-      <div class="project-card-container project-card-container--figma">
-        <div class="project-card">
-          <img src="svg/figma-brands-solid-full.svg" class="skills-logo skill-figma" alt="Ícone FIGMA">
-          <div class="infos">
-            <h3>Figma</h3>
-          </div>
-        </div>
-      </div>
+      <article class="skill-card skill-card--figma" data-skill="figma">
+        <img src="svg/figma-brands-solid-full.svg" class="skills-logo" alt="Ícone Figma">
+        <h3>Figma</h3>
+      </article>
 
-      <!-- SKILL 5 -->
-      <div class="project-card-container project-card-container--java">
-        <div class="project-card">
-          <img src="svg/java-brands-solid-full.svg" class="skills-logo skill-java" alt="Ícone JAVA">
-          <div class="infos">
-            <h3>Java</h3>
-          </div>
-        </div>
-      </div>
+      <article class="skill-card skill-card--java" data-skill="java">
+        <img src="svg/java-brands-solid-full.svg" class="skills-logo" alt="Ícone Java">
+        <h3>Java</h3>
+      </article>
 
-      <!-- SKILL 6 -->
-      <div class="project-card-container project-card-container--node">
-        <div class="project-card">
-          <img src="svg/node-js-brands-solid-full.svg" class="skills-logo skill-node" alt="Ícone NODE JS">
-          <div class="infos">
-            <h3>Node.Js</h3>
-          </div>
-        </div>
-      </div>
+      <article class="skill-card skill-card--node" data-skill="node">
+        <img src="svg/node-js-brands-solid-full.svg" class="skills-logo" alt="Ícone Node.js">
+        <h3>Node.js</h3>
+      </article>
 
-      <!-- SKILL 7 -->
-      <div class="project-card-container project-card-container--python"> 
-        <div class="project-card">
-          <img src="svg/python-brands-solid-full.svg" class="skills-logo skill-python" alt="Ícone PYTHON">
-          <div class="infos">
-            <h3>Python</h3>
-          </div>
-        </div>
-      </div>
+      <article class="skill-card skill-card--python" data-skill="python">
+        <img src="svg/python-brands-solid-full.svg" class="skills-logo" alt="Ícone Python">
+        <h3>Python</h3>
+      </article>
 
-      <!-- SKILL 8 -->
-      <div class="project-card-container project-card-container--react">
-        <div class="project-card">
-          <img src="svg/react-brands-solid-full.svg" class="skills-logo skill-react" alt="Ícone REACT">
-          <div class="infos">
-            <h3>React.Js</h3>
-          </div>
-        </div>
-      </div>
-
+      <article class="skill-card skill-card--react" data-skill="react">
+        <img src="svg/react-brands-solid-full.svg" class="skills-logo" alt="Ícone React">
+        <h3>React.js</h3>
+      </article>
     </section>
   </main>
 
