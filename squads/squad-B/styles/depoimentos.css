@@ -1,9 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
 :root {
-  --background: #FEFEFE;
-  --text: #0A0614;
-  --cor-primaria: #2349FF;
+  --cor-fundo: #FEFEFE;
+  --cor-texto: #0A0614;
+  --cor-principal: #2349FF;
 }
 
 * {
@@ -20,13 +20,13 @@ body {
   font-family: 'Inter', Segoe UI, Arial, Helvetica, sans-serif;
   font-optical-sizing: auto;
   padding: 30px 150px;
-  background-color: var(--background);
+  background-color: var(--cor-fundo);
   display: flex;
   flex-direction: column;
 }
 
 body * {
-  color: var(--text);
+  color: var(--cor-texto);
 }
 
 html {
@@ -39,47 +39,49 @@ main {
   flex: 1;
 }
 
-.menu {
+.menu-principal {
   display: flex;
   align-items: center;
   justify-content: flex-end;
   margin: 50px 0 50px 0;
 }
 
-.menu ul {
+.menu-principal ul {
   display: flex;
   align-items: center;
   gap: 30px;
 }
 
-.menu ul li {
+.menu-principal ul li {
   list-style: none;
 }
 
-.menu ul li a {
+.menu-principal ul li a {
   text-decoration: none;
 }
 
-.pag-ativa {
-  background-color: var(--cor-primaria);
+.pagina-ativa {
+  background-color: var(--cor-principal);
   border-radius: 100px;
-  color: var(--background);
+  color: var(--cor-fundo);
   padding: 15px 30px;
 }
 
-.intro {
+/* Centraliza o título da página antes da lista de relatos. */
+.introducao {
   text-align: center;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.intro > h1 {
+.introducao > h1 {
   font-size: 96px;
   font-weight: 700;
 }
 
-.depoimentos {
+/* Os cartões se reorganizam automaticamente quando a tela fica menor. */
+.lista-depoimentos {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -88,7 +90,7 @@ main {
   margin-top: 30px;
 }
 
-.profile {
+.cartao-depoimento {
   flex: 0 0 350px;
   min-width: 350px;
   border: 1px solid #CAD9EC;
@@ -97,34 +99,34 @@ main {
   background: white;
 }
 
-.img {
+.imagem-perfil {
   display: flex;
   justify-content: center;
   margin-bottom: 10px;
 }
 
-.photo {
+.foto-perfil {
   width: 80px;
   height: 80px;
   object-fit: cover;
   display: block;
 }
 
-.name,
-.client,
-.title-depoimento {
+.nome-cliente,
+.tipo-cliente,
+.titulo-depoimento {
   text-align: center;
 }
 
-.title-depoimento {
+.titulo-depoimento {
   margin-top: 10px;
 }
 
-.depoimento p {
+.texto-depoimento p {
   text-align: justify;
 }
 
-footer {
+.rodape {
   display: flex;
   justify-content: center;
   align-items: center;

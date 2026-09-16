@@ -7,11 +7,11 @@
   <link rel="stylesheet" href="styles/depoimentos.css">
 </head>
 <body>
-  <!-- Conteúdo da página Depoimentos do Squad B -->
+  <!-- Cabeçalho com a navegação principal do Squad B. -->
   <header>
-    <div class="nav-bar">
+    <div class="barra-navegacao">
       <nav>
-        <div class="menu">
+        <div class="menu-principal">
           <ul>
             <li><a href="home.html">Home</a></li>
             <li><a href="sobre.html">Sobre</a></li>
@@ -19,9 +19,8 @@
             <li><a href="projetos.html">Projetos</a></li>
             <li><a href="servicos.html">Serviços</a></li>
             <li><a href="habilidades.html">Skills</a></li>
-            <li><a class="pag-ativa" href="#">Depoimentos</a></li>
+            <li><a class="pagina-ativa" href="#">Depoimentos</a></li>
             <li><a href="case-de-sucesso.html">Case de Sucesso</a></li>
-            </div>
           </ul>
         </div>
       </nav>
@@ -29,95 +28,72 @@
   </header>
 
   <main>
-    <section class="intro">
-      <h1 class="title">
-        Depoimentos
-      </h1>
+    <!-- Título da seção que contextualiza os relatos dos clientes. -->
+    <section class="introducao">
+      <h1 class="titulo-pagina">Depoimentos</h1>
     </section>
 
-    <section class="depoimentos">
-      <div class="profile">
-        <div class="img">
-          <img class="photo" src="img/icon-homem.png" alt="">
+    <!-- Cada cartão reúne a identificação do cliente e seu relato. -->
+    <section class="lista-depoimentos" aria-label="Depoimentos de clientes">
+      <article class="cartao-depoimento">
+        <div class="imagem-perfil">
+          <img class="foto-perfil" src="img/icon-homem.png" alt="Ilustração de Pedro Almeida">
         </div>
-        <h2 class="name">
-          <b>Pedro Almeida</b>
-        </h2>
-        <p class="client">
-          Cliente
-        </p>
-        <div class="depoimento">
-          <h2 class="title-depoimento">
-            Depoimento
-          </h2>
+        <h2 class="nome-cliente">Pedro Almeida</h2>
+        <p class="tipo-cliente">Cliente</p>
+        <div class="texto-depoimento">
+          <h2 class="titulo-depoimento">Depoimento</h2>
           <p>
-            "Tive o prazer de trabalhar com esses profissionais talentosos em diversos projetos. <br> As atenções aos detalhes, a criatividade e o compromisso com a excelência são evidentes em cada entrega. <br> Eles não apenas atendem às expectativas, mas as superam consistentemente. <br>Recomendo fortemente seus serviços para qualquer pessoa que busque qualidade e inovação."
+            Tive o prazer de trabalhar com esses profissionais talentosos em diversos projetos. As atenções aos detalhes, a criatividade e o compromisso com a excelência são evidentes em cada entrega. Eles não apenas atendem às expectativas, mas as superam consistentemente. Recomendo fortemente seus serviços para qualquer pessoa que busque qualidade e inovação.
           </p>
         </div>
-      </div>
+      </article>
       
-      <div class="profile">
-        <div class="img">
-          <img class="photo" src="img/icon-mulher.png" alt="">
+      <article class="cartao-depoimento">
+        <div class="imagem-perfil">
+          <img class="foto-perfil" src="img/icon-mulher.png" alt="Ilustração de Ana Beatriz">
         </div>
-        <h2 class="name">
-          <b>Ana Beatriz</b>
-        </h2>
-        <p class="client">
-          Cliente
-        </p>
-        <div class="depoimento">
-          <h2 class="title-depoimento">
-            Depoimento
-          </h2>
+        <h2 class="nome-cliente">Ana Beatriz</h2>
+        <p class="tipo-cliente">Cliente</p>
+        <div class="texto-depoimento">
+          <h2 class="titulo-depoimento">Depoimento</h2>
           <p>
-            "Trabalhar com essa equipe foi uma experiência incrível. <br> Eles demonstraram uma compreensão profunda das necessidades do projeto e entregaram soluções criativas que realmente fizeram a diferença. <br> A comunicação foi clara e eficiente ao longo de todo o processo, tornando a colaboração fácil e produtiva. <br> Estou extremamente satisfeita com os resultados e ansiosa para futuros projetos juntos."
+            Trabalhar com essa equipe foi uma experiência incrível. Eles demonstraram uma compreensão profunda das necessidades do projeto e entregaram soluções criativas que realmente fizeram a diferença. A comunicação foi clara e eficiente ao longo de todo o processo, tornando a colaboração fácil e produtiva. Estou extremamente satisfeita com os resultados e ansiosa para futuros projetos juntos.
           </p>
         </div>
-      </div>
+      </article>
       
-      <div class="profile">
-        <div class="img">
-          <img class="photo" src="img/icon-mulher2.png" alt="">
+      <article class="cartao-depoimento">
+        <div class="imagem-perfil">
+          <img class="foto-perfil" src="img/icon-mulher2.png" alt="Ilustração de Clara Souza">
         </div>
-        <h2 class="name">
-          <b>Clara Souza</b>
-        </h2>
-        <p class="client">
-          Cliente
-        </p>
-        <div class="depoimento">
-          <h2 class="title-depoimento">
-            Depoimento
-          </h2>
+        <h2 class="nome-cliente">Clara Souza</h2>
+        <p class="tipo-cliente">Cliente</p>
+        <div class="texto-depoimento">
+          <h2 class="titulo-depoimento">Depoimento</h2>
           <p>
-            "Estou extremamente satisfeita com o trabalho realizado por essa equipe. <br> Desde o início, eles demonstraram profissionalismo, criatividade e um compromisso genuíno com a excelência. <br> Cada etapa do projeto foi conduzida com atenção aos detalhes, resultando em um produto final que superou minhas expectativas. <br> Recomendo seus serviços sem hesitação para qualquer pessoa que busque qualidade e inovação."
+            Estou extremamente satisfeita com o trabalho realizado por essa equipe. Desde o início, eles demonstraram profissionalismo, criatividade e um compromisso genuíno com a excelência. Cada etapa do projeto foi conduzida com atenção aos detalhes, resultando em um produto final que superou minhas expectativas. Recomendo seus serviços sem hesitação para qualquer pessoa que busque qualidade e inovação.
           </p>
         </div>
-      </div>
+      </article>
       
-      <div class="profile">
-        <div class="img">
-          <img class="photo" src="img/icon-homem2.png" alt="">
+      <article class="cartao-depoimento">
+        <div class="imagem-perfil">
+          <img class="foto-perfil" src="img/icon-homem2.png" alt="Ilustração de Horácio Treme Terra">
         </div>
-        <h2 class="name">
-          <b>Horácio Treme Terra</b>
-        </h2>
-        <p class="client">
-          Cliente
-        </p>
-        <div class="depoimento">
-          <h2 class="title-depoimento">
-            Depoimento
-          </h2>
+        <h2 class="nome-cliente">Horácio Treme Terra</h2>
+        <p class="tipo-cliente">Cliente</p>
+        <div class="texto-depoimento">
+          <h2 class="titulo-depoimento">Depoimento</h2>
           <p>
-            "Colaborar com essa equipe foi uma experiência excepcional. <br> Eles trouxeram uma combinação perfeita de criatividade, habilidade técnica e profissionalismo para o projeto. <br> A atenção aos detalhes e a dedicação para garantir a satisfação do cliente foram evidentes em cada fase do trabalho. <br> Estou extremamente satisfeito com os resultados e recomendo seus serviços a qualquer pessoa que valorize qualidade e inovação."
+            Colaborar com essa equipe foi uma experiência excepcional. Eles trouxeram uma combinação perfeita de criatividade, habilidade técnica e profissionalismo para o projeto. A atenção aos detalhes e a dedicação para garantir a satisfação do cliente foram evidentes em cada fase do trabalho. Estou extremamente satisfeito com os resultados e recomendo seus serviços a qualquer pessoa que valorize qualidade e inovação.
           </p>
         </div>
-      </div>
+      </article>
     </section>
   </main>
-  <footer>
+  <!-- Rodapé com a disponibilidade atual do squad. -->
+  <footer class="rodape">
     <p>
       &copy; 2025 — Squad B. <br> Disponível para novos projetos.
     </p>
