@@ -1,21 +1,39 @@
-# 🎓 FICR-IAEDU1A — IA Assistiva no Ensino de Programação
+# Preparação do Ambiente e Segurança (Pré-Refatoração)
 
-Repositório monorepo para a disciplina de **Informática na Educação / HTML & CSS**,
-usado no experimento com **GitHub Copilot** (COMIA x SEMIA) em squads.
+Antes de iniciar a refatoração do código principal, o repositório passou por um processo de auditoria de segurança e reconfiguração de infraestrutura para seguir as boas práticas de desenvolvimento.
 
-## 👥 Organização dos Squads
+## 1. Correção de Vazamento de Credenciais (Secret Scanning)
+Durante o envio inicial dos arquivos, a proteção de push do GitHub (`GitHub Push Protection`) bloqueou o commit devido à exposição de um **Personal Access Token (PAT)** dentro dos scripts `create_issues.py` e `setup_repository.py`.
 
-Cada squad possui 4 alunos:
-- 2 focados em **HTML**
-- 2 focados em **CSS**
+### Ações de Mitigação:
+* **Isolamento de Segredos:** Removi os tokens de dentro do código-fonte.
+* **Variáveis de Ambiente:** Armazenei a credencial localmente em um arquivo oculto `.env` sob a chave `GITHUB_TOKEN`.
+* **Proteção Oculta:** Adicionei o arquivo `.env` ao `.gitignore` para garantir que senhas locais nunca sejam enviadas ao repositório público.
+* **Injeção Dinâmica:** Configurei a biblioteca `python-dotenv` no Python para carregar as credenciais na memória em tempo de execução:
+  ```python
+  import os
+  from dotenv import load_dotenv
 
+  load_dotenv(dotenv_path=os.path.join(os.path.dirname(__file__), '..', '.env'))
+  GITHUB_TOKEN = os.getenv("GITHUB_TOKEN")
+  ```
 
+## 2. Resolução de Dependências do Python
+O script necessitava de módulos externos que não faziam parte da biblioteca padrão do Python. Foram instaladas com sucesso as dependências:
+* `python-dotenv`: Para gerenciamento das variáveis de ambiente.
+* `pandas`: Para manipulação e análise dos dados.
+* `openpyxl`: Como motor essencial para permitir que o Pandas faça a leitura do arquivo Excel `assignments.xlsx`.
+* `requests`: Para comunicação com a API REST do GitHub.
 
-## 🗓️ Sprints (por páginas)
+```bash
+pip install python-dotenv pandas openpyxl requests
+```
 
-- **Sprint 1:** Home, Sobre  
-- **Sprint 2:** Contato, Projetos  
-- **Sprint 3:** Habilidades, Serviços  
-- **Sprint 4:** Depoimentos, Case de Sucesso  
+## 3. Redirecionamento de Repositório Remoto (Git Workflow)
+O ambiente local estava inicialmente configurado para enviar os dados para a organização original do curso (`CinUFPE-2025-IA-EDU`). Para que os scripts pudessem ler e gravar os dados corretamente:
+1. Atualizei as constantes `REPO_OWNER` e `REPO_NAME` dentro dos arquivos `.py` para apontarem para minha conta pessoal.
+2. Realizei um reset nas configurações locais do Git (`.git`) para limpar referências truncadas de URL (`https://github.com`).
+3. Conectei o repositório local ao meu repositório remoto pessoal correto em `https://github.combea21SP/refatora-o.git` via `git remote add origin`.
 
-Detalhes de uso e automação estão em `docs/INSTRUCTIONS.md`.
+---
+*Pronto! Com o ambiente seguro, dependências instaladas e o versionamento ajustado, o projeto está pronto para a etapa de refatoração.*
