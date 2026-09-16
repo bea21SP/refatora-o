@@ -1,58 +1,43 @@
-/* Estilos base - personalize para seu squad */
+/* Estilos da página de serviços do Squad B. */
 
 body {
   font-family: system-ui, -apple-system, BlinkMacSystemFont,
                'Segoe UI', sans-serif;
-               margin: 30px;
+  margin: 30px;
   background-color: #584099;
   color: white;
-  padding-bottom: -50px;
-  justify-content: center;
+  min-height: 100vh;
 }
 
-.header-bar {
+/* Centraliza a mensagem de apresentação da página. */
+.cabecalho-conteudo {
   padding: 20px;
   text-align: center;
 }
 
-.servicos-container {
+/* A grade distribui os serviços e se adapta ao espaço disponível. */
+.lista-servicos {
   display: flex;
+  flex-wrap: wrap;
   padding: 10px;
-  justify-content:space-evenly;
-  height: 100vh;
-  gap: -20px;
+  justify-content: center;
+  gap: 20px;
   background-color: transparent;
-   & .ui-ux-design, .desenvolvimento-web, .desen-app, .design-grafico {
-    background: radial-gradient(circle at 50% 10%, rgba(38, 77, 228, 0.7), rgb(119, 89, 139)) !important;
-  }
-    border-radius: 24px;
-    box-shadow: 0 8px 30px rgba(0,0,0,0.15);
-    & .project-card {
-      width: 150px;
-      padding: 10px;
-      border-radius: inherit;
-      --blur-strength: 20px;
-      backdrop-filter: blur(var(--blur-strength));
-      -webkit-backdrop-filter: blur(var(--blur-strength));
-      border: 1px solid rgba(255,255,255,0.2);
-    }
-  }
+}
 
-
-.menu {
+.menu-principal {
   display: flex;
   justify-content: center;
   align-items: center;
-  
 }
 
-ul {
+.menu-principal ul {
   list-style-type: none;
   display: flex;
   gap: 20px;
 }
 
-li {
+.menu-principal li {
     display: inline-block;
     padding: 10px 15px;
     text-decoration: none;
@@ -61,7 +46,7 @@ li {
     transition: transform 0.2s ease-in-out; 
 }
 
-li:hover{
+.menu-principal li:hover {
     transform: translateY(-10px);
 }
 
@@ -70,16 +55,35 @@ header h1 {
   margin-bottom: 10px;
 }
 
-a {
+.menu-principal a {
   text-decoration: none;
   color: white;
 } 
 
-.ui-ux-design, .desenvolvimento-web, .desen-app, .design-grafico{
+.cartao-servico {
+  flex: 1 1 280px;
+  max-width: 360px;
   background-color: #7C5DD3;
   border-radius: 10px;
   padding: 30px;
-  margin: 20px;
   text-align: center;
+  background: radial-gradient(circle at 50% 10%, rgba(38, 77, 228, 0.7), rgb(119, 89, 139));
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+}
+
+.icone-servico {
+  min-height: 64px;
+}
+
+.titulo-servico {
+  margin: 20px 0 12px;
+  font-size: 1.4rem;
+}
+
+.descricao-servico {
+  line-height: 1.6;
 }
 
