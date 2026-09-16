@@ -1,0 +1,30 @@
+{
+  "name": "ficr-iaedu1a-main",
+  "version": "1.0.0",
+  "description": "Antes de iniciar a refatoração do código principal, o repositório passou por um processo de auditoria de segurança e reconfiguração de infraestrutura para seguir as boas práticas de desenvolvimento.",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bea21SP/refatora-o.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/bea21SP/refatora-o/issues"
+  },
+  "homepage": "https://github.com/bea21SP/refatora-o#readme",
+  "dependencies": {
+    "@google/genai": "^2.22.0",
+    "cors": "^2.8.6",
+    "dotenv": "^17.4.2",
+    "express": "^5.2.1"
+  }
+}
