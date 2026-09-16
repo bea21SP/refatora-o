@@ -48,6 +48,58 @@ Para garantir um ambiente de trabalho focado e evitar o versionamento de arquivo
   git push origin main
   ```
 
+  # Documentação: Assistente Virtual com IA — Squad B
+
+## 1. Visão Geral
+Aplicação web interativa desenvolvida para integrar um assistente de IA baseado no Google Gemini ao portal da **Squad B**. A arquitetura utiliza um servidor Node.js como proxy seguro para proteger a chave de API (`GEMINI_API_KEY`).
+
+---
+
+## 2. Arquitetura e Tecnologias
+
+* **Frontend**: HTML5, CSS3 e JavaScript Vanilla (`chat.js`).
+* **Backend**: Node.js com Express, CORS e `dotenv`.
+* **Serviço de IA**: SDK `@google/genai` (Google Gemini API).
+* **Segurança**: Chave de API armazenada exclusivamente no servidor (`.env`).
+
+---
+
+## 3. Estrutura do Projeto
+
+/
+├── .env              # Variáveis de ambiente (chave de API)
+├── server.js         # Servidor Express (proxy de API e servidor estático)
+├── chat.js           # Lógica do frontend e envio de requisições
+├── home.html         # Interface do usuário (UI do chat)
+└── package.json      # Dependências do projeto Node.js
+
+---
+
+## 4. Resumo do Processo de Desenvolvimento
+
+1. **Configuração Inicial**:
+   * Inicialização do projeto (`npm init -y`) e instalação das dependências (`express`, `cors`, `dotenv`, `@google/genai`).
+   * Configuração das variáveis de ambiente no arquivo `.env`.
+
+2. **Criação do Servidor (Proxy)**:
+   * Implementação da rota `POST /api/chat` no `server.js` para processar chamadas à API Gemini e injetar as instruções de contexto da Squad B.
+
+3. **Interface e Conexão Frontend**:
+   * Construção da UI em `home.html` e controle de eventos de envio em `chat.js`.
+
+4. **Resolução de Problemas & Ajustes Finais**:
+   * **Conflito de Portas**: Unificação do servidor para a porta `3001`.
+   * **Servidor Unificado**: Configuração de `express.static` para servir os arquivos HTML/JS diretamente pelo Node.js, permitindo o uso de rotas relativas (`/api/chat`) e eliminando erros de CORS e parsing de JSON (`Unexpected token '<'`).
+   * **Modelo Gemini**: Atualização do identificador do modelo Gemini para a versão ativa no SDK.
+
+---
+
+## 5. Como Executar a Aplicação
+
+1. Certifique-se de preencher a chave no arquivo `.env`:
+   ```env
+   GEMINI_API_KEY=sua_chave_aqui
+
 ---
 
 
