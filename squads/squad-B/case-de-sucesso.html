@@ -1,4 +1,4 @@
-<!-- Case de Sucesso - Squad B -->
+<!-- Estudo de caso do Squad B. -->
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
@@ -7,7 +7,7 @@
   <link rel="stylesheet" href="styles/case-de-sucesso.css">
 </head>
 <body>
-  <!-- Header com navegação -->
+  <!-- Navegação e apresentação resumida do estudo de caso. -->
   <header>
     <div class="nav-bar">
       <nav>
@@ -19,7 +19,7 @@
             <li><a href="projetos.html">Projetos</a></li>
             <li><a href="servicos.html">Serviços</a></li>
             <li><a href="habilidades.html">Skills</a></li>
-            <li><a href="case-de-sucesso.html">Case de Sucesso</a></li>
+            <li><a href="case-de-sucesso.html" aria-current="page">Case de Sucesso</a></li>
           </ul>
         </div>
       </nav>
@@ -30,9 +30,9 @@
     </div>
   </header>
 
-  <!-- Conteúdo principal -->
+  <!-- Conteúdo principal: problema, solução, resultados e tecnologias. -->
   <main>
-    <!-- Informações do Cliente -->
+    <!-- Identifica o cliente e o contexto do projeto. -->
     <section class="cliente-info">
       <div class="cliente-container">
         <h2>Cliente: TechStore Brasil</h2>
@@ -40,11 +40,10 @@
       </div>
     </section>
 
-    <!-- Container do Case -->
+    <!-- Cada artigo representa uma etapa da história do projeto. -->
     <section class="case-container">
-      <!-- Desafio -->
-      <div class="desafio">
-        <div class="icon-desafio">
+      <article class="desafio">
+        <div class="icon-desafio" aria-hidden="true">
           <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor">
             <circle cx="12" cy="12" r="10" stroke-width="1.5"/>
             <path d="M12 8v4" stroke-width="1.5" stroke-linecap="round"/>
@@ -53,17 +52,12 @@
         </div>
         <h3>O Desafio</h3>
         <p>
-          A TechStore enfrentava baixas taxas de conversão <br>
-          em seu site, com uma interface desatualizada <br>
-          e navegação confusa que afastava os clientes. <br>
-          O processo de checkout era longo e resultava <br>
-          em 68% de carrinho abandonado.
+          A TechStore enfrentava baixas taxas de conversão em seu site, com uma interface desatualizada e navegação confusa que afastava os clientes. O processo de checkout era longo e resultava em 68% de carrinho abandonado.
         </p>
-      </div>
+      </article>
 
-      <!-- Solução -->
-      <div class="solucao">
-        <div class="icon-solucao">
+      <article class="solucao">
+        <div class="icon-solucao" aria-hidden="true">
           <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor">
             <path d="M12 3l9 7-9 7-9-7 9-7z" stroke-width="1.5" stroke-linejoin="round"/>
             <path d="M12 17v4" stroke-width="1.5" stroke-linecap="round"/>
@@ -72,68 +66,59 @@
         </div>
         <h3>A Solução</h3>
         <p>
-          Redesenhamos completamente a experiência do usuário, <br>
-          criando uma interface moderna e intuitiva. <br>
-          Implementamos um sistema de checkout simplificado <br>
-          em 3 etapas, otimizamos o site para dispositivos móveis <br>
-          e integramos um sistema de busca inteligente.
+          Redesenhamos completamente a experiência do usuário, criando uma interface moderna e intuitiva. Implementamos um sistema de checkout simplificado em 3 etapas, otimizamos o site para dispositivos móveis e integramos um sistema de busca inteligente.
         </p>
-      </div>
+      </article>
 
-      <!-- Resultados -->
-    <section class="case-resultados">   
-      <div class="resultados">
-        <div class="icon-resultados">
-          <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor">
-            <path d="M3 17l6-6 4 4 8-8" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-            <path d="M17 7h4v4" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-          </svg>
-        </div>
-        <h3>Os Resultados</h3>
-        <div class="metricas">
-          <div class="metrica">
-            <h4>+145%</h4>
-            <p>Aumento nas vendas online</p>
+      <!-- Os resultados reúnem as métricas objetivas e a validação do cliente. -->
+      <section class="case-resultados" aria-labelledby="titulo-resultados">
+        <article class="resultados">
+          <div class="icon-resultados" aria-hidden="true">
+            <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+              <path d="M3 17l6-6 4 4 8-8" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M17 7h4v4" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
           </div>
-          <div class="metrica">
-            <h4>-52%</h4>
-            <p>Redução no abandono de carrinho</p>
+          <h3 id="titulo-resultados">Os Resultados</h3>
+          <div class="metricas">
+            <article class="metrica">
+              <h4>+145%</h4>
+              <p>Aumento nas vendas online</p>
+            </article>
+            <article class="metrica">
+              <h4>-52%</h4>
+              <p>Redução no abandono de carrinho</p>
+            </article>
+            <article class="metrica">
+              <h4>+230%</h4>
+              <p>Crescimento no tráfego mobile</p>
+            </article>
+            <article class="metrica">
+              <h4>4.8/5</h4>
+              <p>Satisfação dos usuários</p>
+            </article>
           </div>
-          <div class="metrica">
-            <h4>+230%</h4>
-            <p>Crescimento no tráfego mobile</p>
-          </div>
-          <div class="metrica">
-            <h4>4.8/5</h4>
-            <p>Satisfação dos usuários</p>
-          </div>
-        </div>
-      </div>
+        </article>
 
-      <!-- Depoimento -->
-      <div class="depoimento">
-        <div class="icon-depoimento">
-          <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor">
-            <path d="M7 8c-2 0-3 1-3 3v4c0 2 1 3 3 3h2l3 3v-13l-3 3h-2z" stroke-width="1.5" stroke-linejoin="round"/>
-            <path d="M17 8c2 0 3 1 3 3v4c0 2-1 3-3 3h-2l-3 3v-13l3 3h2z" stroke-width="1.5" stroke-linejoin="round"/>
-          </svg>
-        </div>
-        <h3>Depoimento do Cliente</h3>
-        <blockquote>
-          <p>
-            "O trabalho da Squad B transformou completamente nosso negócio. <br>
-            A nova plataforma não apenas melhorou nossa aparência, <br>
-            mas triplicou nossas vendas em apenas 4 meses. <br>
-            A equipe entendeu perfeitamente nossas necessidades <br>
-            e entregou além das expectativas."
-          </p>
-          <cite>— Carlos Mendes, CEO da TechStore Brasil</cite>
-        </blockquote>
-      </div>
+        <article class="depoimento">
+          <div class="icon-depoimento" aria-hidden="true">
+            <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+              <path d="M7 8c-2 0-3 1-3 3v4c0 2 1 3 3 3h2l3 3v-13l-3 3h-2z" stroke-width="1.5" stroke-linejoin="round"/>
+              <path d="M17 8c2 0 3 1 3 3v4c0 2-1 3-3 3h-2l-3 3v-13l3 3h2z" stroke-width="1.5" stroke-linejoin="round"/>
+            </svg>
+          </div>
+          <h3>Depoimento do Cliente</h3>
+          <blockquote>
+            <p>
+              O trabalho da Squad B transformou completamente nosso negócio. A nova plataforma não apenas melhorou nossa aparência, mas triplicou nossas vendas em apenas 4 meses. A equipe entendeu perfeitamente nossas necessidades e entregou além das expectativas.
+            </p>
+            <cite>— Carlos Mendes, CEO da TechStore Brasil</cite>
+          </blockquote>
+        </article>
       </section>
     </section>
 
-    <!-- Tecnologias Utilizadas -->
+    <!-- Lista as tecnologias escolhidas para executar a solução. -->
     <section class="tecnologias">
       <h3>Tecnologias Utilizadas</h3>
       <div class="tech-list">
