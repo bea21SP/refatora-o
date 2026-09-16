@@ -35,5 +35,21 @@ O ambiente local estava inicialmente configurado para enviar os dados para a org
 2. Realizei um reset nas configurações locais do Git (`.git`) para limpar referências truncadas de URL (`https://github.com`).
 3. Conectei o repositório local ao meu repositório remoto pessoal correto em `https://github.combea21SP/refatora-o.git` via `git remote add origin`.
 
+## 🗑️ 4. Limpeza do Escopo do Projeto (Remoção de Pastas)
+Para garantir um ambiente de trabalho focado e evitar o versionamento de arquivos redundantes ou desnecessários para a entrega principal, foi realizada uma limpeza estrutural na árvore de diretórios.
+
+### Ações Realizadas:
+* **Identificação de Exclusões:** Mapeamento de pastas acessórias que não faziam parte do núcleo da aplicação ou dos scripts automatizados.
+* **Remoção de Arquivos:** Exclusão definitiva das pastas locais redundantes.
+* **Sincronização com o Git:** As deleções foram registradas no controle de versão e os metadados foram atualizados no repositório remoto:
+  ```bash
+  git add .
+  git commit -m "Removendo pastas desnecessárias para iniciar a refatoração"
+  git push origin main
+  ```
+
+---
+
+
 ---
 *Pronto! Com o ambiente seguro, dependências instaladas e o versionamento ajustado, o projeto está pronto para a etapa de refatoração.*
