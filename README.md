@@ -47,6 +47,54 @@ Para garantir um ambiente de trabalho focado e evitar o versionamento de arquivo
   git commit -m "Removendo pastas desnecessárias para iniciar a refatoração"
   git push origin main
   ```
+# Documentação de Refatoração — Portal Squad B
+
+## Resumo das Melhorias Globais
+
+* **Semântica HTML:** Substituição de `<div>`s genéricas por tags estruturais (`<main>`, `<section>`, `<nav>`, `<article>`).
+* **Acessibilidade (A11y):** Adição dos atributos `aria-current`, `aria-label`, `aria-hidden` em elementos decorativos e associação correta entre `<label>` e `<input>`.
+* **Padronização:** Tradução de classes, IDs e variáveis CSS para português claro e descritivo.
+* **Higienização de Código:** Remoção de `<br>` usados para layout, eliminação de CSS inválido ou redundante e adição de comentários explicativos.
+* **Validação:** Todas as páginas foram reestruturadas e validadas sem erros sintáticos de HTML ou CSS.
+
+---
+
+## Detalhamento por Página
+
+### 1. Página Home (`index.html` / `style.css`)
+* **Estrutura:** Implementação de `<nav>` e `<section>` para delimitação clara de blocos.
+* **Estilização:** Remoção de redundâncias no CSS (duplicação de `margin` no `body` e repetição de regras em `li`).
+* **Melhorias:** Adição de responsividade básica e reorganização das folhas de estilo sem alterar os links ou animações originais.
+
+### 2. Página Habilidades (`habilidades.html` / `habilidades.css`)
+* **Estrutura:** Troca de `div` por `<article>` e remoção da camada desnecessária `.infos`.
+* **Padronização:** Adoção de nomenclatura descritiva (`skill-card--css`) e inclusão do atributo `data-skill`.
+* **Correções:** Ajuste da tag `<title>` para "Habilidades - Squad B" e atualização dos seletores CSS.
+
+### 3. Página Depoimentos (`depoimentos.html` / `depoimentos.css`)
+* **Nomenclatura:** Tradução de variáveis (`--cor-fundo`, `--cor-principal`) e classes (`.cartao-depoimento`, `.foto-perfil`).
+* **Correções:** Solução de fechamento inválido no menu e remoção de quebras de linha manuais (`<br>`) nos textos.
+* **Acessibilidade:** Melhoria nos textos alternativos (`alt`) das imagens.
+
+### 4. Página Contato (`contato.html` / `contato.css`)
+* **Formulário:** Tradução de campos e grupos (`id="nome"`, `.grupo-formulario`, `.canais-contato`).
+* **Layout:** Reorganização estrutural isolando apresentação, canais e formulário.
+* **Responsividade:** Atualização dos seletores para garantir boa adaptação em diferentes telas.
+
+### 5. Página Case de Sucesso (`case-de-sucesso.html`)
+* **Estrutura:** Modulação das métricas e seções em elementos `<article>` independentes.
+* **Correções:** Ajuste de aninhamentos incorretos de elementos e correção de indentação.
+* **Acessibilidade:** Ocultação de ícones decorativos para leitores de tela via `aria-hidden`.
+
+### 6. Página Serviços (`servicos.html` / `servicos.css`)
+* **Componentização:** Padronização dos serviços em `<article>` utilizando classes compartilhadas.
+* **Correções CSS:** Eliminação de valores inválidos (como `gap: -20px` e `padding-bottom: -50px`).
+* **Layout:** Aplicação de `flex-wrap` e readequação dos espaçamentos para responsividade.
+
+### 7. Página Sobre (`sobre.html` / `sobre.css`)
+* **Estrutura:** Correção de tags `<div>` desbalanceadas e estruturação com `<main>`, `<section>` e `<article>`.
+* **Tradução & Bugfix:** Tradução de classes (`.cartao-experiencia`, `.apresentacao-squad`) e remoção do erro de layout `gap: 804px`.
+* **Qualidade:** Correção de erros ortográficos no texto e adição de regras de responsividade.
 
   # Documentação: Assistente Virtual com IA — Squad B
 
