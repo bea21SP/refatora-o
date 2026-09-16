@@ -1,9 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
 :root {
-  --background: #FEFEFE;
-  --text: #0A0614;
-  --cor-primaria: #2349FF;
+  --cor-fundo: #FEFEFE;
+  --cor-texto: #0A0614;
+  --cor-principal: #2349FF;
 }
 
 * {
@@ -19,9 +19,9 @@ body {
   margin-right: 150px;
   margin-top: 30px;
   margin-bottom: 30px;
-  background-color: var(--background);
+  background-color: var(--cor-fundo);
   & * {
-    color: var(--text);
+    color: var(--cor-texto);
   }
 }
 
@@ -29,38 +29,38 @@ html {
   scroll-behavior: smooth;
 }
 
-.menu {
+.menu-principal {
   display: flex;
   align-items: center;
-  gap: 804px;
   justify-content: flex-end;
   margin-bottom: 100px;
   margin-top: 50px;
 }
 
-.menu ul {
+.menu-principal ul {
   display: flex;
   align-items: center;
   gap: 30px;
 }
 
-.menu ul li {
+.menu-principal ul li {
   list-style: none;
   gap: 10px;
 }
 
-.menu ul li a {
+.menu-principal ul li a {
   text-decoration: none;
 }
 
-.pag-ativa {
-  background-color: var(--cor-primaria);
+.pagina-ativa {
+  background-color: var(--cor-principal);
   border-radius: 100px;
-  color: var(--background);
+  color: var(--cor-fundo);
   padding: 15px 30px;
 }
 
-.intro {
+/* O título apresenta o objetivo da página antes da lista de projetos. */
+.introducao {
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -77,46 +77,47 @@ html {
   }
 }
 
-.project-card {
+/* Cada cartão concentra contexto, tecnologias e recursos de um projeto. */
+.cartao-projeto {
   border: 1px solid #CAD9EC;
   border-radius: 24px;
   padding: 30px;
   margin-bottom: 50px;
   margin-top: 50px;
-  & > .project-logo {
+  & > .logo-projeto {
     border-radius: 50%;
     width: 55px;
     height: 55px;
     margin-bottom: 15px;
   }
-  & .infos {
+  & .informacoes-projeto {
     & h3 {
       font-size: 16px;
       font-weight: 600;
       font-style: normal;
       line-height: normal;
     }
-    & .period {
+    & .periodo-projeto {
       color: #6A6F8E;
       font-size: 16px;
       font-weight: 600;
       font-style: normal;
       line-height: normal;
     }
-    & .description {
+    & .descricao-projeto {
       font-size: 15px;
       font-weight: 500;
     }
-    & .technologies {
+    & .tecnologias-projeto {
       padding-bottom: 16px;
       font-size: 15px;
       font-weight: 600;
-      color: var(--cor-primaria);
+      color: var(--cor-principal);
       & > strong {
         font-weight: 500;
       }
     }
-    & > ul {
+    & > .recursos-projeto {
       & li {
         padding-bottom: 10px;
         font-weight: 200;
