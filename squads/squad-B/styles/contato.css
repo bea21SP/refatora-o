@@ -1,4 +1,4 @@
-/* Estilos base - personalize para seu squad */
+/* Estilos da página de contato do Squad B. */
 
 body {
   font-family: system-ui, -apple-system, BlinkMacSystemFont,
@@ -11,7 +11,7 @@ body {
   min-height: 100vh;
 }
 
-header {
+.cabecalho {
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
@@ -21,7 +21,7 @@ header {
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
 }
 
-main {
+.conteudo-principal {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -37,39 +37,39 @@ main {
   flex: 1;
 }
 
-form {
+.formulario-contato {
   flex: 1;
   min-width: 350px;
   max-width: 550px;
 }
 
-.project {
+.apresentacao-contato {
   flex: 1;
   min-width: 300px;
   max-width: 400px;
   padding: 20px 0;
 }
 
-.project h1 {
+.apresentacao-contato h1 {
   font-size: 2em;
   color: #2c3e50;
   margin: 0 0 15px 0;
 }
 
-.project h2 {
+.apresentacao-contato h2 {
   font-size: 1.3em;
   color: #5a6c7d;
   margin: 0 0 12px 0;
   font-weight: 500;
 }
 
-.project p {
+.apresentacao-contato p {
   color: #7f8c8d;
   line-height: 1.6;
   margin: 0;
 }
 
-ul  {
+.menu-principal ul {
   list-style-type: none;
   padding: 0;
   display: flex;
@@ -77,7 +77,7 @@ ul  {
   gap: 10px;
 }
 
-li {
+.menu-principal li {
   padding: 0;
   text-decoration: none;
   background-color: transparent;
@@ -86,7 +86,7 @@ li {
   border: none;
 }
 
-li a {
+.menu-principal li a {
   padding: 12px 24px;
   border-radius: 8px;
   background-color: #f0f0f0;
@@ -95,14 +95,14 @@ li a {
   color: #2c3e50;
 }
 
-li a:hover {
+.menu-principal li a:hover {
   background-color: #7b68ee;
   color: #fff;
   transform: translateY(-2px);
   box-shadow: 0 4px 12px rgba(123, 104, 238, 0.2);
 }
 
-.navegação {
+.acoes-formulario {
   display: flex;
   flex-direction: row;
   gap: 15px;
@@ -110,12 +110,7 @@ li a:hover {
   justify-content: center;
 }
 
-.button-enviar,
-.button-cancelar {
-  flex: 1;
-}
-
-button {  
+button {
   text-decoration: none;
   border: 1px solid #cfc9eb;
   padding: 10px 20px;
@@ -123,7 +118,7 @@ button {
   background-color: #d4cfea;
 }
 
-.contact {
+.canais-contato {
   display: flex;
   flex-direction: column;
   padding: 20px 0;
@@ -131,7 +126,7 @@ button {
   margin-top: 20px;
 }
 
-.email, .whatsapp {
+.canal-contato {
   width: 60px;
   height: 60px;
   border-radius: 12px;
@@ -142,24 +137,27 @@ button {
   transition: all 300ms ease;
 }
 
-.email:hover, .whatsapp:hover {
+.canal-contato:hover {
   background-color: #7b68ee;
   transform: translateY(-4px);
   box-shadow: 0 6px 16px rgba(123, 104, 238, 0.25);
 }
 
-.email svg, .whatsapp svg {
+.canal-contato span {
   width: 32px;
   height: 32px;
-  fill: #2c3e50;
+  color: #2c3e50;
+  font-size: 1.5rem;
+  font-weight: 700;
+  text-align: center;
   transition: fill 280ms ease;
 }
 
-.email:hover svg, .whatsapp:hover svg {
-  fill: #fff;
+.canal-contato:hover span {
+  color: #fff;
 }
 
-.formulario {
+.formulario-contato {
   display: flex;
   flex-direction: column;
   gap: 20px;
@@ -167,29 +165,29 @@ button {
   margin: 0 auto;
 }
 
-.formulario h1 {
+.formulario-contato h1 {
   text-align: center;
   color: #333;
   margin: 0;
   font-size: 1.8em;
 }
 
-/* Grupos de formulário */
-.form-grupo {
+/* Cada grupo associa um rótulo ao respectivo campo. */
+.grupo-formulario {
   display: flex;
   flex-direction: column;
   gap: 8px;
 }
 
-.form-grupo label {
+.grupo-formulario label {
   font-weight: 600;
   color: #2c3e50;
   font-size: 0.95em;
   letter-spacing: 0.5px;
 }
 
-.form-grupo input,
-.form-grupo textarea {
+.grupo-formulario input,
+.grupo-formulario textarea {
   padding: 12px 14px;
   border: 2px solid #c9c9c9;
   border-radius: 8px;
@@ -200,32 +198,32 @@ button {
   color: #333;
 }
 
-.form-grupo input::placeholder,
-.form-grupo textarea::placeholder {
+.grupo-formulario input::placeholder,
+.grupo-formulario textarea::placeholder {
   color: #999;
 }
 
-.form-grupo input:focus,
-.form-grupo textarea:focus {
+.grupo-formulario input:focus,
+.grupo-formulario textarea:focus {
   outline: none;
   border-color: #7b68ee;
   background-color: #fff;
   box-shadow: 0 0 0 3px rgba(123, 104, 238, 0.1);
 }
 
-.form-grupo input:hover,
-.form-grupo textarea:hover {
+.grupo-formulario input:hover,
+.grupo-formulario textarea:hover {
   border-color: #a89be8;
 }
 
-.form-grupo textarea {
+.grupo-formulario textarea {
   resize: vertical;
   min-height: 140px;
   max-height: 300px;
 }
 
-.button-enviar button,
-.button-cancelar button {
+.botao-enviar,
+.botao-cancelar {
   width: 100%;
   padding: 12px 28px;
   font-size: 1em;
@@ -238,117 +236,117 @@ button {
   letter-spacing: 0.8px;
 }
 
-.button-enviar button[type="submit"] {
+.botao-enviar {
   background: linear-gradient(135deg, #7b68ee 0%, #6a5adb 100%);
   color: #fff;
   box-shadow: 0 4px 15px rgba(123, 104, 238, 0.3);
 }
 
-.button-enviar button[type="submit"]:hover {
+.botao-enviar:hover {
   background: linear-gradient(135deg, #8b79f5 0%, #7b68ee 100%);
   box-shadow: 0 6px 20px rgba(123, 104, 238, 0.4);
   transform: translateY(-2px);
 }
 
-.button-enviar button[type="submit"]:active {
+.botao-enviar:active {
   transform: translateY(0);
   box-shadow: 0 2px 8px rgba(123, 104, 238, 0.3);
 }
 
-.button-enviar button[type="submit"]:focus {
+.botao-enviar:focus {
   outline: none;
   box-shadow: 0 0 0 4px rgba(123, 104, 238, 0.2);
 }
 
-.button-cancelar button[type="reset"] {
+.botao-cancelar {
   background-color: #e0e0e0;
   color: #333;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
-.button-cancelar button[type="reset"]:hover {
+.botao-cancelar:hover {
   background-color: #d0d0d0;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
   transform: translateY(-2px);
 }
 
-.button-cancelar button[type="reset"]:active {
+.botao-cancelar:active {
   transform: translateY(0);
   box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
 }
 
-.button-cancelar button[type="reset"]:focus {
+.botao-cancelar:focus {
   outline: none;
   box-shadow: 0 0 0 3px rgba(200, 200, 200, 0.5);
 }
 
 @media (max-width: 900px) {
-  main {
+  .conteudo-principal {
     flex-direction: column;
     align-items: center;
     gap: 30px;
   }
   
-  .project {
+  .apresentacao-contato {
     max-width: 100%;
   }
   
-  form {
+  .formulario-contato {
     max-width: 100%;
   }
 }
 
 @media (max-width: 600px) {
-  header {
+  .cabecalho {
     padding: 15px 20px;
   }
   
-  main {
+  .conteudo-principal {
     margin: 20px 10px;
     padding: 20px;
     gap: 25px;
   }
   
-  .project h1 {
+  .apresentacao-contato h1 {
     font-size: 1.6em;
   }
   
-  .project h2 {
+  .apresentacao-contato h2 {
     font-size: 1.1em;
   }
   
-  .formulario {
+  .formulario-contato {
     gap: 15px;
   }
   
-  .navegação {
+  .acoes-formulario {
     flex-direction: column;
     gap: 12px;
   }
   
-  .button-enviar,
-  .button-cancelar {
+  .botao-enviar,
+  .botao-cancelar {
     max-width: 100%;
   }
   
-  .form-grupo input,
-  .form-grupo textarea {
+  .grupo-formulario input,
+  .grupo-formulario textarea {
     font-size: 16px; 
   }
   
-  ul {
+  .menu-principal ul {
     flex-direction: column;
     gap: 8px;
   }
   
-  li a {
+  .menu-principal li a {
     display: block;
     text-align: center;
   }
 }
 
 
-footer {
+.rodape {
   background-color: #2c3e50;
   color: #fff;
   padding: 30px 20px;
@@ -357,7 +355,7 @@ footer {
   border-top: 2px solid #1a252f;
 }
 
-footer p {
+.rodape p {
   margin: 0;
   font-size: 0.95em;
   opacity: 0.9;
