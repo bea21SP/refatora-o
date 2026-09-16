@@ -1,9 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
 :root {
-  --background: #FEFEFE;
-  --text: #0A0614;
-  --cor-primaria: #2349FF;
+  --cor-fundo: #FEFEFE;
+  --cor-texto: #0A0614;
+  --cor-principal: #2349FF;
 }
 
 * {
@@ -19,51 +19,50 @@ body {
   margin-right: 150px;
   margin-top: 30px;
   margin-bottom: 30px;
-  background-color: var(--background);
+  background-color: var(--cor-fundo);
 }
 
 body * {
-  color: var(--text);
+  color: var(--cor-texto);
 }
 
-.menu {
+.menu-principal {
   display: flex;
   align-items: center;
-  gap: 804px;
   justify-content: flex-end;
   margin-bottom: 100px;
   margin-top: 50px;
 }
 
-.menu ul {
+.menu-principal ul {
   display: flex;
   align-items: center;
   gap: 30px;
 }
 
-.menu ul li {
+.menu-principal ul li {
   list-style: none;
   gap: 10px;
 }
 
-.menu ul li a {
+.menu-principal ul li a {
   text-decoration: none;
 }
 
-.pag-ativa {
-  background-color: var(--cor-primaria);
+.menu-principal a[aria-current="page"] {
+  background-color: var(--cor-principal);
   border-radius: 100px;
-  color: var(--background);
+  color: var(--cor-fundo);
   padding: 15px 30px;
 }
 
-.apresentação {
+.apresentacao-squad {
   display: flex;
   flex-direction: row-reverse;
   justify-content: space-between;
 }
 
-.apresentação > img {
+.apresentacao-squad > img {
   border-radius: 20px;
   outline: 1px solid #C27CFA;
   width: 450px;
@@ -72,41 +71,41 @@ body * {
   object-fit: cover;
 }
 
-.estrofe1 > h1 {
+.texto-apresentacao > h1 {
   font-size: 96px;
   font-weight: 700;
 }
 
-.estrofe1 p {
+.introducao-squad p {
   font-size: 18px;
   font-weight: 200;
   line-height: 35px;
   padding-bottom: 30px;
 }
 
-.estrofe1 p > strong {
-  color: var(--cor-primaria);
+.introducao-squad p > strong {
+  color: var(--cor-principal);
   font-size: 25px;
   font-weight: 600;
   line-height: 40px;
 }
 
-.apresentação--intro {
+.introducao-squad {
   width: 572px;
 }
 
-.apresentação--link {
+.convite-conexao {
   padding-top: 63px;
 }
 
-.company-logo {
+.logo-empresa {
   border-radius: 50%;
   width: 55px;
   height: 55px;
   margin-bottom: 15px;
 }
 
-.work-card {
+.cartao-experiencia {
   border: 1px solid #CAD9EC;
   border-radius: 24px;
   padding: 30px;
@@ -114,15 +113,15 @@ body * {
   margin-top: 50px;
 }
 
-.infos > h3 {
+.informacoes-experiencia > h2 {
   font-size: 16px;
   font-weight: 600;
   font-style: normal;
   line-height: normal;
 }
 
-.infos {
-  & > .company {
+.informacoes-experiencia {
+  & > .periodo-empresa {
     color: #6A6F8E;
     font-size: 16px;
     font-weight: 600;
@@ -141,5 +140,31 @@ body * {
       font-size: 14px;
       font-weight: 300;
     }
+  }
+}
+
+/* Em telas menores, a imagem e o texto passam a ocupar uma coluna. */
+@media (max-width: 800px) {
+  body {
+    margin: 20px;
+  }
+
+  .apresentacao-squad {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .apresentacao-squad > img,
+  .introducao-squad {
+    width: 100%;
+    max-width: 450px;
+  }
+
+  .apresentacao-squad > img {
+    height: auto;
+  }
+
+  .texto-apresentacao > h1 {
+    font-size: 3.5rem;
   }
 }
