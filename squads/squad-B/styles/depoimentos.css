@@ -132,3 +132,51 @@ main {
   align-items: center;
   margin-top: auto;
 }
+
+body {
+  background: #f2f2f2;
+  color: #111111;
+}
+
+.menu-principal ul li a {
+  color: #111111;
+  font-weight: 600;
+}
+
+.pagina-ativa {
+  background: #000000;
+  box-shadow: none;
+}
+
+.introducao > h1 {
+  color: #111111;
+  letter-spacing: -0.05em;
+}
+
+.cartao-depoimento {
+  border: 1px solid #dedede;
+  box-shadow: 0 14px 30px rgba(0, 0, 0, 0.07);
+}
+
+.cartao-depoimento:nth-child(even) {
+  background: #000000;
+  border-color: #000000;
+  color: #ffffff;
+}
+
+.cartao-depoimento:nth-child(even) .nome-cliente,
+.cartao-depoimento:nth-child(even) .tipo-cliente,
+.cartao-depoimento:nth-child(even) .titulo-depoimento,
+.cartao-depoimento:nth-child(even) .texto-depoimento p {
+  color: #ffffff;
+}
+
+.rodape {
+  color: #ffffff;
+  background: #000000;
+  padding: 18px;
+}
+
+.rodape p {
+  color: #ffffff;
+}

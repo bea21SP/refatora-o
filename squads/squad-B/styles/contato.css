@@ -361,4 +361,65 @@ button {
   opacity: 0.9;
 }
 
+body {
+  background: #f2f2f2;
+  color: #111111;
+}
+
+.cabecalho {
+  border-bottom-color: #dedede;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+}
+
+.conteudo-principal {
+  border-color: #dedede;
+  box-shadow: 0 14px 30px rgba(0, 0, 0, 0.08);
+}
+
+.menu-principal li a {
+  background: #ffffff;
+  border: 1px solid #dedede;
+  color: #111111;
+}
+
+.menu-principal li a:hover {
+  background: #000000;
+  color: #ffffff;
+  box-shadow: none;
+}
+
+.apresentacao-contato h1,
+.formulario-contato h1 {
+  color: #111111;
+}
+
+.apresentacao-contato h2,
+.grupo-formulario label {
+  color: #333333;
+}
+
+.grupo-formulario input:focus,
+.grupo-formulario textarea:focus {
+  border-color: #000000;
+  box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.1);
+}
+
+.botao-enviar {
+  background: #000000;
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.16);
+}
+
+.botao-enviar:hover {
+  background: #333333;
+}
+
+.botao-cancelar {
+  background: #e5e5e5;
+}
+
+.rodape {
+  background: #000000;
+  border-top-color: #000000;
+}
+
 

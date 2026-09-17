@@ -197,3 +197,69 @@ li:hover {
 .chat-input-area button:hover {
     background: #2563eb;
 }
+
+/* Identidade visual baseada em superfícies claras e blocos de alto contraste. */
+body {
+  background: #f2f2f2;
+  color: #111111;
+}
+
+li {
+  background: #ffffff;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+  border: 1px solid #dedede;
+}
+
+li a {
+  color: #111111;
+  font-weight: 600;
+}
+
+li:first-child {
+  background: #000000;
+}
+
+li:first-child a {
+  color: #ffffff;
+}
+
+main {
+  background: #ffffff;
+  border: 1px solid #dedede;
+  box-shadow: 0 16px 35px rgba(0, 0, 0, 0.08);
+}
+
+h1,
+p {
+  color: #111111;
+}
+
+h1 {
+  letter-spacing: -0.03em;
+}
+
+.chat-container {
+  border: 1px solid #dedede;
+  box-shadow: 0 16px 35px rgba(0, 0, 0, 0.14);
+}
+
+.chat-header {
+  background: #000000;
+}
+
+.chat-messages {
+  background: #f2f2f2;
+}
+
+.bot-message {
+  background: #ffffff;
+  color: #111111;
+  border: 1px solid #dedede;
+}
+
+.user-message,
+.chat-input-area button,
+.chat-input-area button:hover {
+  background: #000000;
+  color: #ffffff;
+}
