@@ -153,3 +153,30 @@ Aplicação web interativa desenvolvida para integrar um assistente de IA basead
 
 ---
 *Pronto! Com o ambiente seguro, dependências instaladas e o versionamento ajustado, o projeto está pronto para a etapa de refatoração.*
+
+## Reformulação Visual e Padronização de Navegação
+
+### Direção Visual e Estilização
+A identidade visual de todo o portal foi atualizada com foco em minimalismo, alto contraste e elegância profissional, mantendo a estrutura HTML original e as classes específicas de cada página intactas.
+
+* **Paleta e Contraste**: Fundo em cinza-claro com alternância de cartões brancos e pretos para garantir hierarquia clara.
+* **Bordas e Sombras**: Adição de cantos arredondados e sombras discretas para dar profundidade aos elementos sem poluir a interface.
+* **Tipografia e Espaçamento**: Leitura mais fluida com tipografia limpa e espaçamento interno mais generoso.
+* **Componentes Unificados**: Botões, formulários, interface do chat com IA, rodapés e estados ativos alinhados ao mesmo padrão visual em preto e branco.
+
+---
+
+### Padronização da Navegação
+O menu principal foi unificado em todas as telas para garantir consistência de navegação e melhorar a experiência do usuário (UX).
+
+* **Navegação Consistente (8 Destinos)**: Todas as páginas agora compartilham o mesmo menu, organizado exatamente na mesma ordem:
+  1. Home
+  2. Sobre
+  3. Contato
+  4. Projetos
+  5. Serviços
+  6. Skills
+  7. Depoimentos
+  8. Case de Sucesso
+* **Correção de Links**: Resolução de links quebrados e incompletos na página de *Projetos*.
+* **Preservação de Layout**: Manutenção de todas as convenções visuais e classes específicas já existentes nas páginas.
